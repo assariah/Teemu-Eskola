@@ -1,11 +1,13 @@
+let elements = document.getElementById("content")
+let hr = document.createElement("hr")
+let h3 = document.createElement("h3")
+h3.textContent="Teemu Eskola"
+content.appendChild(h3)
+content.appendChild(hr)
 
-let divs = document.querySelectorAll("div");
-/**@type Element */
-let div;
-for (div of divs) {
-    console.log(div.textContent)
-}
-let listItems = document.querySelectorAll("ul>li")
-for(li of listItems){
-li.textContent="John doe"
-}
+let ul = document.querySelector("ul")
+let li = document.createElement("li")
+li.textContent="sunnuntai"
+ul.appendChild(li)
+let turha
+document.querySelector
