@@ -13,6 +13,7 @@ function no_animation() {
 link2.addEventListener('mouseenter', animation);
 link2.addEventListener('mouseleave', no_animation);
 //Navbar JS ends here
+
 function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
 
     function showQuestions(questions, quizContainer){
@@ -32,7 +33,7 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
                 // ...add an html radio button
                 answers.push(
                     '<label>'
-                        + '<input type="radio" name="question'+i+'" value="'+letter+'">'
+                        + '<input type="radio" id="joku" name="question'+i+'" value="'+letter+'">'
                         + letter + ': '
                         + questions[i].answers[letter]
                     + '</label>'
@@ -54,6 +55,7 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
         // gather answer containers from our quiz
         var answerContainers = quizContainer.querySelectorAll('.answers');
         
+        
         // keep track of user's answers
         var userAnswer = '';
         var numCorrect = 0;
@@ -71,23 +73,31 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
                 
                 // color the answers green
                 answerContainers[i].style.color = 'lightgreen';
+               
+                
+                
             }
             // if answer is wrong or blank
             else{
                 // color the answers red
                 answerContainers[i].style.color = 'red';
+                
+                
             }
         }
     
         // show number of correct answers out of total
         resultsContainer.innerHTML = numCorrect + ' out of ' + questions.length;
+         
     }
 	// show the questions
 	showQuestions(questions, quizContainer);
 
 	// when user clicks submit, show results
 	submitButton.onclick = function(){
+
 		showResults(questions, quizContainer, resultsContainer);
+        submitButton.disabled = true
 	}
 }
 var myQuestions = [

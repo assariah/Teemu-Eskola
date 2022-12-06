@@ -75,7 +75,10 @@ footer img {
     max-height: 100px;
     background-color: white;
 }
-
+.disabled {
+    color: darkgrey;
+    background-color: grey;
+ }
 
 
 
