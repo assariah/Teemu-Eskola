@@ -1,12 +1,12 @@
 #navbar {
     border: 5px solid #DA4F00;
-    background-color: #FF995F;
+    background-color: #499DB9;
     font-weight: bold;
     }
 
 
 #navbar a:hover {
-    color: #056888;
+    color: #ff995f;
 }
 .carousel .carousel-item {
     height: 200px;
@@ -52,7 +52,7 @@ p, a, footer{
 }
 
 footer {
-    background-color: #FF995F;
+    background-color: #499DB9;
     border: 5px solid #DA4F00;
     width: 100%;
     margin: 0;   

@@ -83,11 +83,15 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
                 answerContainers[i].style.color = 'red';
                 
                 
+                
             }
         }
     
         // show number of correct answers out of total
-        resultsContainer.innerHTML = numCorrect + ' out of ' + questions.length;
+        resultsContainer.innerHTML = numCorrect + ' out of ' + questions.length + ". Oikeat vastaukset olivat c ,a ,b ,b ,c";
+        
+        
+    
          
     }
 	// show the questions
